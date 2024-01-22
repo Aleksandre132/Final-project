@@ -1,0 +1,100 @@
+@mixin Boxmix {
+  display: flex;
+
+  justify-content: space-between;
+  margin-left: auto;
+  width: 40%;
+  height: 100%;
+}
+@mixin linkflex {
+  display: flex;
+  width: 30vh;
+}
+@mixin headermix {
+  margin-top: 2vh;
+  display: flex;
+  width: 100%;
+  height: 10%;
+  overflow: hidden;
+
+  border: 0px;
+
+  font-size: 2vh;
+  font-color: white;
+}
+@mixin normalheadermix {
+}
+@mixin headermixother {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  margin: 0px;
+  border: 0px;
+  flex-direction: column;
+}
+@mixin introbutton {
+  width: 60px;
+  height: 60px;
+  background-color: #669ccb;
+}
+@mixin intromix {
+  float: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10%;
+  width: 20%;
+}
+
+@mixin locwrappermix {
+  display: flex;
+  width: 65vw;
+  height: 72vh;
+
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 1vh;
+}
+@mixin locboxmix {
+  flex: 32%;
+  height: 50%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@mixin locimg1 {
+}
+@mixin locimgtest {
+  display: grid;
+  flex: 0 0 90%;
+  height: 90%;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+@mixin loctextcontainer {
+  width: 310px;
+  height: 10px;
+}
+@mixin favloc {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(
+      rgba(45, 92, 132, 0.5),
+      rgba(45, 92, 132, 0.5)
+    ),
+    url(https://lh3.googleusercontent.com/p/AF1QipOhz6TW833iZfb9L6d-Sv0EVU_aSEnsCl9wwtj4=s680-w680-h510);
+  flex: 50%;
+}
+@mixin favmon {
+}
+@mixin historicalbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 33%;
+}
