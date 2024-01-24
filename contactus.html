@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/global.css" />
     <link rel="reset" href="css/reset.css" />
     <meta charset="utf-8" />
     <header>
       <a>TBILISI EXPLORER</a>
       <div id="websiteheader1">
-        <a class="currentlocation" href="https//home.html"> HOME</a>
+        <a class="currentlocation" href="index.html"> HOME</a>
         <a href="aboutus.html"> ABOUT US</a>
-        <a href="news.html">NEWS</a>
         <a href="locations.html">LOCATIONS</a>
+        <a href="news.html">NEWS</a>
         <a href="contactus.html">CONACT US</a>
       </div>
     </header>
@@ -24,10 +25,26 @@
       <p class="contactinfo">Our phone number- 597 54 13 41 00</p>
       <p class="contactinfo">Email- tbilisiexplorer@gmail.com</p>
     </div>
-    <form class="contactform">
-      <label class="contactte" for="fname">Name:</label><br />
-      <label for="freason">Email:</label><br />
-      <label for="fname">Reason for contacting:</label><br />
+    <div class="formcontainer">
+    <form action="/action_page.php">
+      <label for="fname">First Name</label>
+      <input
+        type="text"
+        id="fname"
+        name="firstname"
+        placeholder="Your name.."
+      />
+
+      <label for="lname">Last Name</label>
+      <input
+        type="text"
+        id="lname"
+        name="lastname"
+        placeholder="Your last name.."
+      />
+
+      <input type="submit" value="Submit" />
+    </div>
     </form>
   </body>
 </html>

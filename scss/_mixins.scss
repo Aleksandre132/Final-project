@@ -34,8 +34,7 @@
   flex-direction: column;
 }
 @mixin introbutton {
-  width: 60px;
-  height: 60px;
+  background-color: gray;
   background-color: #669ccb;
 }
 @mixin intromix {
@@ -71,8 +70,8 @@
 }
 @mixin locimgtest {
   display: grid;
-  flex: 0 0 90%;
-  height: 90%;
+  flex: 0 0 80%;
+  height: 80%;
   grid-template-columns: 1fr 1fr 1fr;
 }
 

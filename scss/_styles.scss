@@ -36,6 +36,16 @@ p {
 #locwrapper {
   @include locwrappermix;
 }
+#locwrapper1 {
+  @include locwrappermix;
+  height: 50vh;
+}
+#homewrapper1 {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 32vh;
+}
 .locbox {
   @include locboxmix;
 }
@@ -96,6 +106,7 @@ a {
   flex-direction: column;
   justify-content: center;
 }
+
 .favoritemonument {
   background-repeat: no-repeat;
   background-size: cover;
@@ -299,7 +310,7 @@ p {
 }
 .historywrapper {
   width: 100%;
-  height: 40vh;
+  height: 20vh;
   margin-bottom: 5vh;
   display: flex;
   align-items: center;
@@ -313,17 +324,7 @@ p {
   justify-content: space-between;
   flex-direction: row;
 }
-@media only screen and (max-width: 500px) {
-  /* For tablets: */
-  #offerswrapper {
-    height: 100vh;
-    width: 20vw;
-    flex-direction: column;
-  }
-  .offertext {
-    font-size: 0.5vw;
-  }
-}
+
 a:hover {
   color: black;
 }
@@ -333,6 +334,115 @@ button:hover {
 a:visited {
   color: purple;
 }
-.newswrapper {
+.newsarticle {
+  margin-top: 8vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  border: #304146;
+
+  border: solid #000;
+  border-width: 0 1px;
+}
+.newsimg {
+  width: 100%;
+}
+@media only screen and (max-width: 1400px) {
+  a {
+    font-size: 1.5vw;
+  }
+  #websiteheader1 {
+    width: 60%;
+    margin-left: 20vw;
+  }
+  #offerswrapper {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  @media screen and (min-width: 700px) {
+    .locbox {
+      flex: 15%;
+      height: 30%;
+    }
+
+    #locwrapper {
+      width: 80vw;
+    }
+    .offertext {
+      font-size: 2vw;
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+  .offertext {
+    font-size: 1vw;
+  }
+  p {
+    font-size: 1.2vh;
+  }
+  a {
+    font-size: 2vw;
+  }
+  .linkbutton {
+    width: auto;
+    background-color: darkgray;
+  }
+  #homewrapper {
+    height: 117vh;
+    width: 100vw;
+    margin-top: 2vh;
+  }
+  #locwrapper {
+    height: 120vh;
+    width: 40vw;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .locbox {
+    flex: 100%;
+    height: 10%;
+    justify-content: space-between;
+  }
+  .loctextcontainer {
+    height: 20%;
+    flex: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .loctext {
+    height: 20%;
+    font-size: 2vh;
+  }
+  .locimg {
+    flex: 100%;
+    height: 80%;
+  }
+  .monumenttext {
+    font-size: 2.5vw;
+  }
+  .offertext {
+    font-size: 2vw;
+  }
+  .historyparagraph {
+    width: 80%;
+    height: 30%;
+  }
+  .offerbox {
+    flex-basis: 20%;
+    height: 5vh;
+  }
+  #offerswrapper {
+    height: 120vh;
+    flex-direction: column;
+  }
+  footer {
+    margin-bottom: auto;
+  }
+}
+.formcontainer {
+  width: 100vw;
+  display: flex;
   justify-content: center;
 }
